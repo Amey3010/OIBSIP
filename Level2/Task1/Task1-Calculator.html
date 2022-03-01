@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="icon" href="icon.png">
+        <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
+        <link rel="stylesheet" href="Task1-Calculator.css">
+        <style>
+            footer{
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                height: fit-content;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-align: center;
+                background-color: rgba(255,255,255, 0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="head">Calculator</h1>
+        <div class="Calc">
+            <div class="Result">
+                <input type="text" class="expression" disabled>
+                <input type="text" class="answer" disabled>
+            </div>
+            <div class="Button">
+                <button class="operation (" value="(">(</button>
+                <button class="operation )" value=")">)</button>
+                <button class="operation ANS" value="ANS">ans</button>
+                <button class="operation DEL" value="DEL">del</button>
+                <button class="operation CLR" value="CLR">clear</button>
+                <button class="num 7" value="7">7</button>
+                <button class="num 8" value="8">8</button>
+                <button class="num 9" value="9">9</button>
+                <button class="operation %" value="%">%</button>
+                <button class="operation ROOT" value="SQRT">&Sqrt;</button>
+                <button class="num 4" value="4">4</button>
+                <button class="num 5" value="5">5</button>
+                <button class="num 6" value="6">6</button>
+                <button class="operation *" value="*">&times;</button>
+                <button class="operation /" value="/">&divide;</button>
+                <button class="num 1" value="1">1</button>
+                <button class="num 2" value="2">2</button>
+                <button class="num 3" value="3">3</button>
+                <button class="operation +" value="+">&plus;</button>
+                <button class="operation -" value="-">&minus;</button>
+                <button class="operation ." value=".">.</button>
+                <button class="num 0" value="0">0</button>
+                <button class="operation POW" value="**">^</button>
+                <button class="Enter">ENTER</button>
+            </div>
+        </div>
+        <footer> Created By Amey Burgul | 2022</footer>
+        <script src="Task1-Calculator.js"></script>
+    </body>
+</html>
