@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(8, 18, 38);
+    color: white;
+    font-family: Montserrat;
+    margin: 0px;
+}
+.head{
+    margin: 0px;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.container{
+    width: 500px;
+    height: 70%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Addtask{
+    display: inline-flex;
+    width: 510px;
+    background-color: rgba(144,144,144,0.5);
+    padding: 10px;
+    border-radius: 50px;
+    gap: 10px;
+}
+.Addtask>button{
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(8, 18, 38);
+    background-color: lightblue;
+    border: 2px solid transparent;
+    padding: 7px 12px 7px 12px;
+    cursor: pointer;
+}
+.Addtask>button:hover{
+    background-color: rgb(8, 18, 38);
+    color: lightblue;
+}
+.Addtask>button:active{
+    border-color: rgb(8, 18, 38);
+    color: rgb(8, 18, 38);
+    background-color: lightblue;
+}
+.Addtask>input{
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    width: 457px;
+    background-color: lightblue;
+    color: rgb(8, 18, 38);
+}
+.Addtask>input:focus{
+    border: 2px solid rgb(8, 18, 38);;
+}
+.tasks h2{
+    margin: 0px;
+    padding-left: 30px;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    gap: 20PX;
+}
+.task{
+    display: inline-grid;
+    background-color: rgb(14, 32, 64);
+    color: rgb(19, 45, 91);
+    width: 510px;
+    grid-template-columns: 45px 400px 45px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.task button{
+    border: 2px solid transparent;
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: rgb(19, 45, 91);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+.task p{
+    background-color: rgba(240, 255, 255, 0.6);
+    color: rgb(19, 45, 91);
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0px;
+}
+.task>button:nth-of-type(1):hover{
+    background-color: rgba(0, 250, 0, 0.4);
+    color: white;
+}
+.task>button:nth-of-type(1):active{
+    background-color: rgb(19, 45, 91);
+    color: rgb(0, 255, 0);;
+    border: 2px solid rgb(0, 255, 0);
+}
+
+.task>button:nth-of-type(2):hover{
+    background-color: rgba(255, 0, 0, 0.4);
+    color: white;
+}
+.task>button:nth-of-type(2):active{
+    background-color: rgb(19, 45, 91);
+    color: rgb(255, 0, 0);;
+    border: 2px solid rgb(255, 0, 0);
+}
+.disabled {
+    pointer-events: none;
+}
+p.disabled{
+    color: white;
+    text-decoration: line-through;
+    opacity: 0.2;
+}
